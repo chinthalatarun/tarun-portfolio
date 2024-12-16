@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/15UMst-LogoMakr.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="images/ChinthalaTarun.pdf" download >Download Resume</a></li>
+
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>UI/UX Developer & Designer</p>
+            <h1>Hi, I'm <span>Chinthala</span><br>Tarun From India</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Untitled design (6).png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm a passionate UI/UX Developer and Designer dedicated to crafting intuitive and engaging digital experiences.Whether it's designing mobile apps, websites, or interactive interfaces, I approach each project with empathy, creativity, and a commitment to delivering thoughtful and user-friendly designs.Let's create something great together!</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('certification')">Certification</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br></li>
+                        <li>Designing Web/App interfaces</li>
+                        <li>Front-End Development - <br>Proficiency in HTML, CSS, and JavaScript for creating responsive, cross-platform web experiences.<br>Familiarity with frameworks like React Js, Bootstrap.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="certification">
+                    <ul>
+                        <li><span>Aug 2024 - Nov 2024</span></li><br>
+                        <li>UI/UX Development at TechMahindra Foundation, Visakahapatnam.</li>
+                
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023</span><br>B.Tech in Computer Science and Engineering from Maharaj Vijayaram Gajapathi Raj College of Engineering, Vizianagaram.<br>CGPA - 7.03</li>
+                        <li><span>2019</span><br>Intermediate from Sri Gayatri Visakahapatnam.<br>CGPA - 9.65</li>
+                        <li><span>2017</span><br>SSC from Stella Maris Visakahapatnam.<br>GPA - 9.7</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="skills">
+    <div class="container">
+        <h1 class="sub-title">My Skills</h1>
+        <div class="sub-title1">
+            <h2>Technical Skills</h2>
+        </div>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-html5"></i>
+                <h2>HTML</h2>
+                <p>It defines the structure and content of web pages using a series of elements and tags.</p>
+                <a href="https://www.geeksforgeeks.org/html-introduction/">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-css"></i>
+                <h2>CSS</h2>
+                <p>It allows you to apply styles to HTML documents, describing how a webpage should look by prescribing colors.</p>
+                <a href="https://www.geeksforgeeks.org/css-introduction/">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-js"></i>
+                <h2>JAVASCRIPT</h2>
+                <p>JavaScript is a single-threaded language which means it executes one task at a time.</p>
+                <a href="https://www.geeksforgeeks.org/introduction-to-javascript/">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-react"></i>
+                <h2>REACT JS</h2>
+                <p>is a popular and powerful JavaScript library used for building dynamic and interactive user interfaces, primarily for single-page applications (SPAs).</p>
+                <a href="https://www.geeksforgeeks.org/reactjs-introduction/">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-wordpress"></i>
+                <h2>WORD PRESS</h2>
+                <p>t's an open-source platform that allows users to create, manage, and modify their websites without needing extensive coding knowledge.</p>
+                <a href="https://www.geeksforgeeks.org/what-is-wordpress/">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-figma"></i>
+                <h2>FIGMA</h2>
+                <p>Figma is a powerful design tool that lets you create and collaborate on user interfaces and prototypes for websites, apps, and much more.</p>
+                <a href="https://www.geeksforgeeks.org/what-is-figma/">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-regular fa-pen-to-square"></i>
+                <h2>CANVA</h2>
+                <p>From compelling social media posts to infographics and resumes, Canva can help you design anything you need.</p>
+                <a href="https://www.tutorialspoint.com/what-is-canva-and-what-are-its-main-features">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-paintbrush"></i>
+                <h2>Adobe Photoshop</h2>
+                <p>Photoshop is a tool for designers, web developers, graphic artists, photographers, and creative professionals. It is widely used in industries</p>
+                <a href="https://www.geeksforgeeks.org/introduction-to-photoshop/">Learn more</a>
+            </div>
+        </div>
+
+        <div class="content1">
+            <h2 class="main-heading1">Soft Skills</h2>
+                 <div class="skills-container">
+                    <div class="skill-box">
+                      <h3>Communication</h3>
+                     <p>Ability to convey information effectively in both written and verbal forms.</p>
+                      </div>
+               <div class="skill-box">
+                    <h3>Teamwork</h3>
+                     <p>Working well with others to achieve common goals and contribute to team success.</p>
+                </div>
+                <div class="skill-box">
+                     <h3>Problem-Solving</h3>
+                     <p>Identifying challenges and finding effective solutions to resolve them.</p>
+                </div>
+            </div>
+         </div>
+
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/Sss.png">
+                <div class="layer">
+                    <h3>Hair Studio Website</h3>
+                    <p>A responsive website using HTML, CSS, and JavaScript ensures that your site will adapt to different devices .</p>
+                    <a href="https://chinthalatarun.github.io/new-web/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/reactimage.png">
+                <div class="layer">
+                    <h3>E-commerce Website</h3>
+                    <p>Built an eCommerce website using ReactJS,is a popular open-source JavaScript library used for building user interfaces.</p>
+                    <a href="https://chinthalatarun.github.io/raj/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/blogs.png">
+                <div class="layer">
+                    <h3>Word Press</h3>
+                    <p>Its ease of use, scalability, and vast ecosystem of themes and plugins make it an excellent choice for creating responsive, feature-rich websites.</p>
+                    <a href="https://dev-tarunalex.pantheonsite.io/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/pexels-olivernt-23962811.png">
+                <div class="layer">
+                    <h3>Figma</h3>
+                    <p>Figma is a cloud-based design and prototyping tool that allows users to create, collaborate, and share interactive designs.</p>
+                    <a href="https://www.figma.com/proto/OU7o4Ud8pDfsLJ3upKtcRI/Food-Ordering-App?node-id=0-1&t=5pupt4To5dvVDLcU-1"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/adds1 poster.png">
+                <div class="layer">
+                    <h3>Poster</h3>
+                    <p>Canva is an online graphic designing tool with several functions and features that even beginners can use.</p>
+                    <a href="https://www.canva.com/design/DAGYIgFTuUI/9ZZNFEM-wgRa2UGhAmKIgg/view?utm_content=DAGYIgFTuUI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h784adb35a1"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Fashion1.png">
+                <div class="layer">
+                    <h3>Flyer</h3>
+                    <p>Canva is an online graphic designing tool with several functions and features that even beginners can use.</p>
+                    <a href="https://www.canva.com/design/DAGYbZKDDNo/Fs8rj-k64PToplad6Lpzig/view?utm_content=DAGYbZKDDNo&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=ha762e08fde"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Musical poster1.png">
+                <div class="layer">
+                    <h3>Flyer</h3>
+                    <p>Canva is an online graphic designing tool with several functions and features that even beginners can use.</p>
+                    <a href="https://www.canva.com/design/DAGYcOKMQ28/xfcDId13E7llogeW4DI-lA/view?utm_content=DAGYcOKMQ28&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h54e7340094"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> tarunchinthala38@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> 7093528516</p>
+                <div class="social-icons">
+                    <a href="https://github.com/chinthalatarun"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/chinthalatarun"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://wa.me/+917093528516"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+                <a href="images/ChinthalaTarun.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Chinthala Tarun.</p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyeBDFgPkXg2EAXRBRcP3JZAKA244WVp3E5yyr0OgOcXyc_NGBk4biNLTxG7CYtj2J4/exec' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
